@@ -1,4 +1,4 @@
-stepCounter = 0
+stepCounter: int = 0
 lifeCounter = 3
 combination = "SSNWES"
 
@@ -21,28 +21,39 @@ while play:
     print("You are in the magic maze. Which way to go? (N,S,E,W)")
     if input() == "S":
         print("you may continue")
+        stepCounter+1
         if input() == "S":
             print("well done, you may continue")
+            stepCounter + 1
             if input() == "N":
                 print("well done, you may continue")
+                stepCounter + 1
                 if input() == "W":
                     print("well done, you may continue")
+                    stepCounter + 1
                     if input() == "E":
                         print("well done, you may continue")
+                        stepCounter + 1
                         if input() == "S":
+                            stepCounter + 1
                             print("well done, you have escaped the maze, you may leave")
                             play = False
 
                         else:
                             print("wrong move")
+                            stepCounter + 1
                     else:
                         print("wrong move")
+                        stepCounter + 1
                 else:
                     print("wrong move")
+                    stepCounter + 1
             else:
                 print("wrong move")
+                stepCounter+1
         else:
             print("wrong move")
+            stepCounter + 1
 
     else :
         print("wrong move")
