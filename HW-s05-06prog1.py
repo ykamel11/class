@@ -22,40 +22,53 @@ while play:
     if input() == "S":
         print("you may continue")
         stepCounter+1
+        LifeChecker
         if input() == "S":
             print("well done, you may continue")
             stepCounter + 1
+            LifeChecker
             if input() == "N":
                 print("well done, you may continue")
                 stepCounter + 1
+                LifeChecker
                 if input() == "W":
                     print("well done, you may continue")
                     stepCounter + 1
+                    LifeChecker
                     if input() == "E":
                         print("well done, you may continue")
                         stepCounter + 1
+                        LifeChecker
                         if input() == "S":
                             stepCounter + 1
+                            LifeChecker
                             print("well done, you have escaped the maze, you may leave")
                             play = False
 
                         else:
                             print("wrong move")
                             stepCounter + 1
+                            LifeChecker
                     else:
                         print("wrong move")
                         stepCounter + 1
+                        LifeChecker
                 else:
                     print("wrong move")
                     stepCounter + 1
+                    LifeChecker
             else:
                 print("wrong move")
                 stepCounter+1
+                LifeChecker
         else:
             print("wrong move")
             stepCounter + 1
+            LifeChecker
 
     else :
         print("wrong move")
+        stepCounter + 1
+        LifeChecker
 
 
