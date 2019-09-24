@@ -43,6 +43,7 @@ while play:
                             stepCounter + 1
                             LifeChecker
                             print("well done, you have escaped the maze, you may leave")
+                            print(stepCounter)
                             play = False
 
                         else:
@@ -70,5 +71,3 @@ while play:
         print("wrong move")
         stepCounter + 1
         LifeChecker
-
-
