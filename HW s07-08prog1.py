@@ -8,4 +8,4 @@ for c in s[1:]:
             longest = current
     else:
         current = c
-print("Longest substring in alphabetical order is:", longest)
+print("Longest substring :", longest)
